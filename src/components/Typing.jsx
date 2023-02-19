@@ -7,11 +7,13 @@ function Typing({from, message}) {
     // time — время публикации сообщения, строка;
     // text — текст сообщения, строка, может отсутствовать.
     return (
-        <li className="clearfix">
-            <div className="message-data align-right">
-                <span className="message-data-time">{message.time}</span> &nbsp; &nbsp;
-                <span className="message-data-name">{from.name}</span>
-                <i className="fa fa-circle me"></i>
+        <li>
+            <div className="message-data">
+                <span className="message-data-name">
+                    <i className="fa fa-circle online"></i>
+                    {from.name}
+                </span>
+                <span className="message-data-time">{message.time}</span>
             </div>
             <i className="fa fa-circle online"></i>
             <i className="fa fa-circle online typing1"></i>
